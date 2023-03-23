@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import { Inter } from 'next/font/google'
-import NavBar from '@/components/NavBar';
+import Navbar from '@/components/Navbar';
 import Carousel from '@/components/Carousel';
 import Why from '@/components/Why';
 import Destinations from '@/components/Destinations';
@@ -41,7 +41,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={''}>
-        <NavBar
+        <Navbar
           title={'David and Bricks Travels'}
           logo="/favicon.ico"
           navLinks={navLinks}
