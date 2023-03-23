@@ -71,10 +71,11 @@ export default function Navbar({
                                    logo &&
                                    <Link href="#" className="-m-1.5 p-1.5">
                                         <span className="sr-only">Your Company</span>
-                                        <img
-                                             className="h-10 w-auto"
+                                        <Image
                                              src={logo}
                                              alt=""
+                                             height={10}
+                                             width={10}
                                         />
                                    </Link>
                               }

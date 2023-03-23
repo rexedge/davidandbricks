@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import React from 'react'
 import Classes from '../styles/footer.module.css'
 
@@ -9,7 +10,7 @@ export default function Footer() {
                          <div class="row">
                               <div class="col-xl-3 col-lg-4 col-12">
                                    <div class="footer-widget">
-                                        <img src="/favicon.ico" class="foot-logo" alt="footer logo" width="150" />
+                                        <Image src="/favicon.ico" class="foot-logo" alt="footer logo" height={150} width={150} />
 
                                         <div class="cont_info">
                                              <p>
