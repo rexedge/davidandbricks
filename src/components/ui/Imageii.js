@@ -14,7 +14,7 @@ const Imageii = ({ src, alt, height, width }) => {
                     <div className="absolute top-0 left-0 w-full h-full flex items-center justify-center">
                          <div className="w-full h-full flex items-center justify-center animate-pulse">
                               <div
-                                   className="bg-yellow-300  h-full w-full rounded"
+                                   className="bg-gray-300 h-full w-full rounded"
                                    style={{ paddingBottom: `${(height / width) * 100}%` }}
                               ></div>
                          </div>

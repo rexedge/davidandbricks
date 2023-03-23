@@ -1,92 +1,98 @@
+import { Email, Facebook, LinkedIn, LocationOn, Phone, Pinterest, Twitter, YouTube } from '@mui/icons-material'
+import classNames from 'classnames'
 import Image from 'next/image'
+import Link from 'next/link'
 import React from 'react'
 import Classes from '../styles/footer.module.css'
 
 export default function Footer() {
      return (
-          <div class={Classes.footer}>
-               <div class="container">
-                    <div class="footer-top">
-                         <div class="row">
-                              <div class="col-xl-3 col-lg-4 col-12">
-                                   <div class="footer-widget">
-                                        <Image src="/favicon.ico" class="foot-logo" alt="footer logo" height={150} width={150} />
+          <div className={classNames(Classes.footer, 'bg-gray-900')}>
+               <div className="container mx-auto">
+                    <div className="pt-6">
+                         <div className="grid grid-cols-12">
+                              <div className="col-span-12 lg:col-span-4">
+                                   <div className="flex flex-col justify-center">
+                                        <Image src="/favicon.ico" className="foot-logo" alt="footer logo" height={50} width={50} />
 
-                                        <div class="cont_info">
-                                             <p>
-                                                  <i class="material-icons">phone</i>
+                                        <div className="mt-5">
+                                             <p className='mb-3 flex flex-row gap-10'>
+                                                  <Phone />
                                                   <span>+956 542 6584</span>
                                              </p>
 
-                                             <p>
-                                                  <i class="material-icons">email</i>
+                                             <p className='mb-3 flex flex-row gap-10'>
+                                                  <Email />
                                                   <span>example@example.com</span>
                                              </p>
 
-                                             <p>
-                                                  <i class="material-icons">location_on</i>
-                                                  <span>203 Fake St. Mountain View, San Francisco, California, USA</span>
+                                             <p className='mb-3 flex flex-row gap-10'>
+                                                  <LocationOn />
+                                                  <span>
+                                                       203 Fake Street,
+                                                       <br />Mountain View,
+                                                       <br />San Francisco, California, USA
+                                                  </span>
                                              </p>
                                         </div>
                                    </div>
                               </div>
 
-                              <div class="col-xl-3 col-lg-4 col-12">
-                                   <div class="footer-widget">
-                                        <h3 class="fot-title">About Us</h3>
-                                        <ul>
-                                             <li><a href="#">Our Story</a></li>
-                                             <li><a href="#">Travel Blog &amp; Tips</a></li>
-                                             <li><a href="#">gallerying With Us</a></li>
-                                             <li><a href="#">Tour Guid</a></li>
-                                             <li><a href="#">Be Our Partner</a></li>
+                              <div className="col-spam-6 lg:col-span-2">
+                                   <div className="">
+                                        <h3 className="text-xl font-bold ">About Us</h3>
+                                        <ul className='mt-5'>
+                                             <li className='mb-3'><a href="#">Our Story</a></li>
+                                             <li className='mb-3'><a href="#">Travel Blog &amp; Tips</a></li>
+                                             <li className='mb-3'><a href="#">Gallerying With Us</a></li>
+                                             <li className='mb-3'><a href="#">Tour Guid</a></li>
+                                             <li className='mb-3'><a href="#">Be Our Partner</a></li>
                                         </ul>
                                    </div>
                               </div>
 
-                              <div class="col-xl-3 col-lg-4 col-12">
-                                   <div class="footer-widget">
-                                        <h3 class="fot-title">Support</h3>
-                                        <ul>
-                                             <li><a href="#">Customer Support</a></li>
-                                             <li><a href="#">Privacy &amp; Policy</a></li>
-                                             <li><a href="#">Terms &amp; Condition</a></li>
-                                             <li><a href="#">Forum</a></li>
-                                             <li><a href="#">Tour Guid</a></li>
+                              <div className="col-spam-6 lg:col-span-2">
+                                   <div className="">
+                                        <h3 className="text-xl font-bold ">Support</h3>
+                                        <ul className='mt-5'>
+                                             <li className='mb-3'><a href="#">Customer Support</a></li>
+                                             <li className='mb-3'><a href="#">Privacy &amp; Policy</a></li>
+                                             <li className='mb-3'><a href="#">Terms &amp; Condition</a></li>
+                                             <li className='mb-3'><a href="#">Forum</a></li>
+                                             <li className='mb-3'><a href="#">Tour Guid</a></li>
                                         </ul>
                                    </div>
                               </div>
 
-                              <div class="col-xl-3 col-lg-4 col-12">
-                                   <div class="footer-widget">
-                                        <h3 class="fot-title">Subscribe Newsletter</h3>
-                                        <p>
+                              <div className="col-span-12 lg:col-span-4">
+                                   <div className="">
+                                        <h3 className="text-xl font-bold ">Subscribe Newsletter</h3>
+                                        <p className='mt-5 '>
                                              By subscribing to our mailing list you will always be updated
                                         </p>
-                                        <form class="subscribe-form mt-3">
-                                             <div class="form-group">
-                                                  <input type="text" class="form-control form--control" name="email" placeholder="Enter Your Email" />
-                                             </div>
-                                             <button class="btn-contact-bg" type="submit">Subscribe</button>
+                                        <form className="w-full flex flex-wrap mt-5">
+                                             <input type="text" className="flex-1 px-2 placeholder:text-gray-800 py-2 font-medium" name="email" placeholder="Enter Your Email" />
+
+                                             <button className="flex-2 bg-gray-800 text-primary-color font-semibold" type="submit">Subscribe</button>
                                         </form>
                                    </div>
                               </div>
                          </div>
                     </div>
 
-                    <div class="footer-bottom text-center">
-                         <p class="copyright_text">
-                              Copyright @ 2021 <a href="#">Nour</a> all right reserved.
+                    <div className="border-t mt-4 pt-4  text-center">
+                         <p className="mb-5">
+                              Copyright @ 2023 <Link href="#" className='font-bold'>ISCE</Link> all right reserved.
                          </p>
-                         <ul class="foot_social_link">
-                              <li><a href="#"><i class="fab fa-facebook"></i></a></li>
-                              <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                              <li><a href="#"><i class="fab fa-pinterest"></i></a></li>
-                              <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
-                              <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+                         <ul className="flex flex-row justify-center gap-3">
+                              <li className=''><Link href="#"><Facebook /></Link></li>
+                              <li className=''><Link href="#"><Twitter /></Link></li>
+                              <li className=''><Link href="#"><Pinterest /></Link></li>
+                              <li className=''><Link href="#"><LinkedIn /></Link></li>
+                              <li className=''><Link href="#"><YouTube /></Link></li>
                          </ul>
                     </div>
                </div>
-          </div>
+          </div >
      )
 }
