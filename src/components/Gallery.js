@@ -23,72 +23,72 @@ export default function Gallery() {
                          <Card p='0'>
                               <div className='relative h-72 '>
                                    <Image className="absolute h-full w-full object-cover"
-                                        src={'/images/img1.png'}
+                                        src={'/images/img1.webp'}
                                         alt={'img 1'}
                                         layout="fill"
                                         objectFit="cover"
                                    />
-                                   <Link href="/images/img1.png" className=""><ArrowCircleRight sx={{ fontSize: 40 }} /></Link>
+                                   <Link href="/images/img1.webp" className=""><ArrowCircleRight sx={{ fontSize: 40 }} /></Link>
                                    <h4>Eiffel Tower, France</h4>
                               </div>
                          </Card>
                          <Card p='0'>
                               <div className='relative h-72 '>
                                    <Image className="absolute h-full w-full object-cover"
-                                        src={'/images/img1.png'}
+                                        src={'/images/img1.webp'}
                                         alt={'img 1'}
                                         layout="fill"
                                         objectFit="cover"
                                    />
-                                   <Link href="/images/img1.png" className=""><ArrowCircleRight sx={{ fontSize: 40 }} /></Link>
+                                   <Link href="/images/img1.webp" className=""><ArrowCircleRight sx={{ fontSize: 40 }} /></Link>
                                    <h4>Machu Picchu, Peru</h4>
                               </div>
                          </Card>
                          <Card p='0'>
                               <div className='relative h-72 '>
                                    <Image className="absolute h-full w-full object-cover"
-                                        src={'/images/img1.png'}
+                                        src={'/images/img1.webp'}
                                         alt={'img 1'}
                                         layout="fill"
                                         objectFit="cover"
                                    />
-                                   <Link href="/images/img1.png" className=""><ArrowCircleRight sx={{ fontSize: 40 }} /></Link>
+                                   <Link href="/images/img1.webp" className=""><ArrowCircleRight sx={{ fontSize: 40 }} /></Link>
                                    <h4>Eiffel Tower, France</h4>
                               </div>
                          </Card>
                          <Card p='0'>
                               <div className='relative h-72 '>
                                    <Image className="absolute h-full w-full object-cover"
-                                        src={'/images/img1.png'}
+                                        src={'/images/img1.webp'}
                                         alt={'img 1'}
                                         layout="fill"
                                         objectFit="cover"
                                    />
-                                   <Link href="/images/img1.png" className=""><ArrowCircleRight sx={{ fontSize: 40 }} /></Link>
+                                   <Link href="/images/img1.webp" className=""><ArrowCircleRight sx={{ fontSize: 40 }} /></Link>
                                    <h4>Eiffel Tower, France</h4>
                               </div>
                          </Card>
                          <Card p='0'>
                               <div className='relative h-72 '>
                                    <Image className="absolute h-full w-full object-cover"
-                                        src={'/images/img1.png'}
+                                        src={'/images/img1.webp'}
                                         alt={'img 1'}
                                         layout="fill"
                                         objectFit="cover"
                                    />
-                                   <Link href="/images/img1.png" className=""><ArrowCircleRight sx={{ fontSize: 40 }} /></Link>
+                                   <Link href="/images/img1.webp" className=""><ArrowCircleRight sx={{ fontSize: 40 }} /></Link>
                                    <h4>Eiffel Tower, France</h4>
                               </div>
                          </Card>
                          <Card p='0'>
                               <div className='relative h-72 '>
                                    <Image className="absolute h-full w-full object-cover"
-                                        src={'/images/img1.png'}
+                                        src={'/images/img1.webp'}
                                         alt={'img 1'}
                                         layout="fill"
                                         objectFit="cover"
                                    />
-                                   <Link href="/images/img1.png" className=""><ArrowCircleRight sx={{ fontSize: 40 }} /></Link>
+                                   <Link href="/images/img1.webp" className=""><ArrowCircleRight sx={{ fontSize: 40 }} /></Link>
                                    <h4>Eiffel Tower, France</h4>
                               </div>
                          </Card>

@@ -16,44 +16,44 @@ import Button from './ui/Button';
 const slides = [
      {
           id: 1,
-          src: "/images/img1.png",
+          src: "/images/img1.webp",
           title: "Explore The World With Ease",
           subtitle: "We are here to make your travel confort"
 
      },
      {
           id: 2,
-          src: "/images/img2.png",
+          src: "/images/img2.webp",
           title: "Explore The World With Ease",
           subtitle: "We are here to make your travel confort"
      },
      {
           id: 3,
-          src: "/images/img4.png",
+          src: "/images/img4.webp",
           title: "Explore The World With Ease",
           subtitle: "We are here to make your travel confort"
      },
      {
           id: 4,
-          src: "/images/img5.png",
+          src: "/images/img5.webp",
           title: "Explore The World With Ease",
           subtitle: "We are here to make your travel confort"
      },
      {
           id: 5,
-          src: "/images/img6.png",
+          src: "/images/img6.webp",
           title: "Explore The World With Ease",
           subtitle: "We are here to make your travel confort"
      },
      {
           id: 6,
-          src: "/images/img7.png",
+          src: "/images/img7.webp",
           title: "Explore The World With Ease",
           subtitle: "We are here to make your travel confort"
      },
      {
           id: 7,
-          src: "/images/img8.png",
+          src: "/images/img8.webp",
           title: "Explore The World With Ease",
           subtitle: "We are here to make your travel confort"
      },

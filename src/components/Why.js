@@ -68,7 +68,7 @@ export default function Why() {
                          <div className="w-full lg:w-1/2">
                               <VideoPlayer
                                    videoUrl={'https://www.youtube.com/watch?v=OVMuvfxbT1o'}
-                                   imageUrl={'/images/img3.png'}
+                                   imageUrl={'/images/img3.webp'}
                               />
                          </div>
                     </div>
