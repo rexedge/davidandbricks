@@ -97,7 +97,7 @@ export default function Footer() {
 
                     <div className="border-t mt-4 pt-4 px-4 text-center">
                          <p className="mb-5">
-                              Copyright @ 2023 <Link href="#" className='font-bold'>ISCE</Link> all right reserved.
+                              Copyright @ 2023 <Link href="#" className='font-bold'>David & Brics</Link> all right reserved.
                          </p>
                          <ul className="flex flex-row justify-center gap-3">
                               <li className=''><Link href="#"><Facebook /></Link></li>
