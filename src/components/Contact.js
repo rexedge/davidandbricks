@@ -28,9 +28,9 @@ export default function Contact() {
                                                   Head Office
                                              </div>
                                              <div className=''>
-                                                  Polystar Building, Marwa Lekki,
-                                                  <br />
-                                                  Lagos, Nigeria
+                                                  1, Funmilayo Street
+                                                  <br />Off Country-Home Road,
+                                                  <br />Benin City, Edo, Nigeria.
                                              </div>
                                         </div>
                                    </div>
@@ -39,9 +39,8 @@ export default function Contact() {
                                         <div className=''>
                                              <div className='font-bold'>Phone</div>
                                              <div className=''>
-                                                  +234 812 345 678
-                                                  <br />
-                                                  +234 812 345 678
+                                                  +234 808 077 6586
+                                                  <br />+234 706 611 9546
                                              </div>
                                         </div>
                                    </div>
@@ -52,9 +51,7 @@ export default function Contact() {
                                                   Head Office
                                              </div>
                                              <div className=''>
-                                                  info@flick.com
-                                                  <br />
-                                                  www.flick.com
+                                                  davidbricstravels@gmail.com
                                              </div>
                                         </div>
                                    </div>
