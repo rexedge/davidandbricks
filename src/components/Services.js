@@ -1,4 +1,4 @@
-import { AirplanemodeActiveTwoTone, AirplaneTicket, AirplaneTicketTwoTone, Fastfood, Hotel, KingBed, LocalTaxi, Medication, SupportAgent, Wifi } from '@mui/icons-material'
+import { Add, AirplanemodeActiveTwoTone, AirplaneTicket, AirplaneTicketTwoTone, CurrencyExchange, Extension, Fastfood, FreeBreakfast, Hotel, KingBed, LocalTaxi, Medication, SupportAgent, Wifi } from '@mui/icons-material'
 import React from 'react'
 import Card from './layout/Card'
 import Grid from './layout/Grid/Grid'
@@ -16,7 +16,7 @@ export default function Services() {
 
                     <Grid>
                          <Card bg='light'>
-                              <div className="flex flex-row gap-3 text-dark">
+                              <div className="flex flex-col md:flex-row gap-5 text-dark p-2 md:p-5">
                                    <AirplanemodeActiveTwoTone sx={{ fontSize: 60 }} />
                                    <div className="">
                                         <h4 className='font-bold text-xl mb-3'>FLIGHT RESERVATIONS</h4>
@@ -33,7 +33,7 @@ export default function Services() {
                               </div>
                          </Card>
                          <Card bg='light'>
-                              <div className="flex flex-row gap-3 text-dark">
+                              <div className="flex flex-col md:flex-row gap-5 text-dark  p-3 md:p-5">
                                    <AirplaneTicket sx={{ fontSize: 60 }} />
                                    <div className="">
                                         <h4 className='font-bold text-xl mb-3'>VISA ASSISTANCE SERVICES</h4>
@@ -43,14 +43,13 @@ export default function Services() {
                                              community, we created a visa assistance service to cater for visa and
                                              immigration processing services for tourist and student permits to the following
                                              countries: United Kingdom, United States of America, Ireland, Kenya, United
-                                             Arab Emirates, South Africa, Canada and Schengen na
-                                             ons.
+                                             Arab Emirates, South Africa, Canada and Schengen nations.
                                         </p>
                                    </div>
                               </div>
                          </Card>
                          <Card bg='light'>
-                              <div className="flex flex-row gap-3 text-dark">
+                              <div className="flex flex-col md:flex-row gap-5 text-dark  p-3 md:p-5">
                                    <Hotel sx={{ fontSize: 60 }} />
                                    <div className="">
                                         <h4 className='font-bold text-xl mb-3'>HOTEL & RESORT RESERVATIONS</h4>
@@ -62,44 +61,68 @@ export default function Services() {
                                    </div>
                               </div>
                          </Card>
-                         <Card>
-                              <div className="flex flex-row gap-3">
-                                   <Wifi sx={{ fontSize: 60 }} />
+                         <Card bg='light'>
+                              <div className="flex flex-col md:flex-row gap-5 text-dark  p-3 md:p-5">
+                                   <FreeBreakfast sx={{ fontSize: 60 }} />
                                    <div className="">
-                                        <h4 className='font-bold text-xl mb-3'>Free WiFi</h4>
+                                        <h4 className='font-bold text-xl mb-3'>LEISURE ACTIVITIES</h4>
                                         <p>
-                                             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fuga veniam similique deserunt veritatis placeat
+                                             Whether by land, by air, or by sea, we have tour packages waiting for you.
+
+                                             Experience a relaxing and unforgettable vacation at some of the best
+
+                                             destinations and locations in the world.
                                         </p>
                                    </div>
                               </div>
                          </Card>
-                         <Card>
-                              <div className="flex flex-row gap-3">
-                                   <Medication sx={{ fontSize: 60 }} />
+                         <Card bg='light'>
+                              <div className="flex flex-col md:flex-row gap-5 text-dark  p-3 md:p-5">
+                                   <CurrencyExchange sx={{ fontSize: 60 }} />
                                    <div className="">
-                                        <h4 className='font-bold text-xl mb-3'>Free Medication</h4>
+                                        <h4 className='font-bold text-xl mb-3'>TRAVEL INSURANCE PREMIUMS</h4>
                                         <p>
-                                             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fuga veniam similique deserunt veritatis placeat
+                                             Have a worry-free trip by availing travel insurance for you and your loved ones.
+                                             David & Brics has partnered with reputable insurance providers to make sure
+                                             our clients are insured and protected from unforeseen circumstances.
                                         </p>
                                    </div>
                               </div>
                          </Card>
-                         <Card>
-                              <div className="flex flex-row gap-3">
-                                   <SupportAgent sx={{ fontSize: 60 }} />
+                         <Card bg='light'>
+                              <div className="flex flex-col md:flex-row gap-5 text-dark  p-3 md:p-5">
+                                   <Add sx={{ fontSize: 60 }} />
                                    <div className="">
-                                        <h4 className='font-bold text-xl mb-3'>Tour Guide</h4>
-                                        <p>
-                                             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fuga veniam similique deserunt veritatis placeat
-                                        </p>
+                                        <h4 className='font-bold text-xl mb-3'>OTHER SEVICES</h4>
+                                        <ul className='list-disc pl-4'>
+                                             <li>Group tour bookings</li>
+                                             <li>Airport transportation</li>
+                                             <li>Covid19 test bookings</li>
+                                             <li>Travel advisory services</li>
+                                        </ul>
                                    </div>
                               </div>
                          </Card>
                     </Grid>
-
-                    <div className="row text-left">
-
-                    </div>
+                    <Card bg='light mt-5'>
+                         <div className="flex flex-col md:flex-row gap-5 text-dark  p-3 md:p-5">
+                              <Extension sx={{ fontSize: 60 }} />
+                              <div className="">
+                                   <h4 className='font-bold text-xl mb-3'>OUR VALUED ADDED SERVICES</h4>
+                                   <ul className='list-disc pl-4'>
+                                        <li>Detailed knowledge of African, Arabian, Asian and Western cultures</li>
+                                        <li>Extensive track record of delivering travel and service excellence to the
+                                             most discerning global travelers</li>
+                                        <li>Exceptional worldwide reputation based on client satisfaction, trust, and hospitality.</li>
+                                        <li>Competitive prices combined with the highest quality services resulting invalue for money across all our services and products.</li>
+                                        <li>Diversity and expertise in tourism quotations, reservations, operations and accounting.</li>
+                                        <li>Experience in public relations and a renowned reputation in the tourism market.</li>
+                                        <li>Operating with the latest state of the art information and communication technology.</li>
+                                        <li>Problem solving and focus on solution-oriented methods for all customer requests and requirements</li>
+                                   </ul>
+                              </div>
+                         </div>
+                    </Card>
                </div>
           </Section>
      )

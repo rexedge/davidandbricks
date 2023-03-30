@@ -5,3 +5,7 @@
 :root {
      --swiper-pagination-color: #1c984e;
 }
+
+* {
+     transition: all 0.5 ease-in-out;
+}

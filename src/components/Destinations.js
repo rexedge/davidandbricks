@@ -57,7 +57,7 @@ const destinations = [
 export default function Destinations() {
      return (
           <Section>
-               <div className="">
+               <div id='places' className="">
                     <SectionHeader
                          bgtitle='Places'
                          title='Destination'

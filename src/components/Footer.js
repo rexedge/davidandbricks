@@ -13,7 +13,10 @@ export default function Footer() {
                          <div className="grid grid-cols-12">
                               <div className="col-span-12 lg:col-span-4 mb-8">
                                    <div className="flex flex-col justify-center">
-                                        <Image src="/images/logo.png" className="foot-logo" alt="footer logo" height={70} width={70} />
+                                        <div className="">
+                                             <Image src="/images/logo.png" className="foot-logo" alt="footer logo" height={70} width={70} />
+                                             <span>David & Brics</span>
+                                        </div>
 
                                         <div className="mt-5">
                                              <p className='mb-3 flex flex-row gap-10'>
@@ -27,7 +30,7 @@ export default function Footer() {
 
                                              <p className='mb-3 flex flex-row gap-10'>
                                                   <Email />
-                                                  <span>example@example.com</span>
+                                                  <span>davidbricstravels@gmail.com</span>
                                              </p>
 
                                              <p className='mb-3 flex flex-row gap-10'>

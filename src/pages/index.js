@@ -8,12 +8,14 @@ import Services from '@/components/Services';
 import Gallery from '@/components/Gallery';
 import Footer from '@/components/Footer';
 import Contact from '@/components/Contact';
+import About from '@/components/About';
 
 const inter = Inter({ subsets: ['latin'] })
 const navLinks = [
-  { title: "Home", url: "/" },
+  { title: "Home", url: "#top" },
   { title: "Service", url: "#service" },
-  { title: "Top Deals", url: "#deals" },
+  { title: "About", url: "#about" },
+  { title: "Places", url: "#places" },
   { title: "Gallery", url: "#gallery" },
   { title: "Contact", url: "#contact" },
 ];
@@ -39,11 +41,11 @@ export default function Home() {
           content="The world is a big place and to ensure you always have the trusted David & Brics Travels hospitality wherever you go, we have spread a great network of professional ou its to help you enjoy the best destinations across the world."
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/images/logo.svg" />
       </Head>
       <main className={''}>
         <Navbar
-          title={'David and Bricks Travels'}
+          title={'David and Brick Travels'}
           navLinks={navLinks}
           // callToAction={navButtons}
           variant="light"
@@ -59,6 +61,7 @@ export default function Home() {
         <Why />
         <Destinations />
         <Services />
+        <About />
         <Gallery />
         <Contact />
         <Footer />
