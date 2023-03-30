@@ -116,7 +116,7 @@ export default function Contact() {
                                                             type='subject'
                                                             placeholder='Enter subject'
                                                             autoComplete='subject'
-                                                            className='w-full bg-primary-light border-spacing-1 rounded-lg p-2'
+                                                            className='w-full bg-light border-spacing-1 rounded-lg p-2'
                                                        />
                                                   </div>
                                              </div>
@@ -132,7 +132,7 @@ export default function Contact() {
                                                             id='message'
                                                             name='message'
                                                             rows={3}
-                                                            className='w-full bg-primary-light border-spacing-1 rounded-lg p-2'
+                                                            className='w-full bg-light border-spacing-1 rounded-lg p-2'
                                                             placeholder='Write a few sentences.'
                                                             defaultValue={''}
                                                        />
@@ -143,7 +143,7 @@ export default function Contact() {
                                         <div className='mt-6 flex items-center justify-start gap-x-6'>
                                              <button
                                                   type='submit'
-                                                  className='rounded-md bg-dark px-10 py-2 uppercase font-semibold text-white shadow-sm hover:bg-secondary focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary-light'
+                                                  className='rounded-md bg-primary px-10 py-2 uppercase font-semibold text-white shadow-sm hover:bg-secondary focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary-light'
                                              >
                                                   <Send /> Send
                                              </button>
