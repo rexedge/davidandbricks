@@ -16,44 +16,20 @@ import Button from './ui/Button';
 const slides = [
      {
           id: 1,
-          src: "/images/img1.webp",
+          src: "/images/1.jpg",
           title: "Explore The World With Ease",
           subtitle: "We are here to make your travel confort"
 
      },
      {
           id: 2,
-          src: "/images/img2.webp",
+          src: "/images/2.jpg",
           title: "Explore The World With Ease",
           subtitle: "We are here to make your travel confort"
      },
      {
           id: 3,
-          src: "/images/img4.webp",
-          title: "Explore The World With Ease",
-          subtitle: "We are here to make your travel confort"
-     },
-     {
-          id: 4,
-          src: "/images/img5.webp",
-          title: "Explore The World With Ease",
-          subtitle: "We are here to make your travel confort"
-     },
-     {
-          id: 5,
-          src: "/images/img6.webp",
-          title: "Explore The World With Ease",
-          subtitle: "We are here to make your travel confort"
-     },
-     {
-          id: 6,
-          src: "/images/img7.webp",
-          title: "Explore The World With Ease",
-          subtitle: "We are here to make your travel confort"
-     },
-     {
-          id: 7,
-          src: "/images/img8.webp",
+          src: "/images/3.jpg",
           title: "Explore The World With Ease",
           subtitle: "We are here to make your travel confort"
      },
@@ -75,32 +51,43 @@ export default function Carousel() {
                     }}
                     loop={true}
                     modules={[Autoplay, Pagination, Navigation]}
-                    className="mySwiper"
+                    className="mt-16 md:mt-0 mySwiper"
                >
                     <div
                          className="relative w-full overflow-hidden after:clear-both after:block after:content-[''] z-10">
                          {slides.map((image) => (
                               <SwiperSlide key={image.id}>
                                    <div
-                                        className="relative float-left -mr-[100%] w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
+                                        className="
+                                        relative float-left 
+                                        -mr-[100%] w-full 
+                                        transition-transform 
+                                        duration-[600ms] 
+                                        ease-in-out 
+                                        motion-reduce:transition-none
+                                        aspect-mobile
+                                        md:aspect-desktop
+                                        overflow-hidden   
+                                        "
                                         data-te-carousel-active
                                         data-te-carousel-item>
                                         <Image
                                              src={image.src}
-                                             className="block w-full"
+                                             className="w-full "
                                              alt={image.title}
-                                             height={900}
-                                             width={1600}
-                                             priority
+                                             height={700}
+                                             width={1200}
+                                        // priority
                                         />
                                         <div
-                                             className="absolute left-0 right-0 md:top-1/3 top-1/4 mx-auto flex items-center justify-center text-center text-white">
+                                             className="absolute left-0 right-0 top-0 bottom-0 bg-light bg-opacity-30 mx-auto flex items-center justify-center text-center text-white px-5">
                                              <div className="">
-                                                  <p className='lg:text-[150%] text-base'>
+                                                  <Image src={'/images/logofull.png'} alt='David and Bricks Logo' height={300} width={900} />
+                                                  {/* <p className='lg:text-[150%] text-base'>
                                                        {image.subtitle}
-                                                  </p>
-                                                  <h1 className="lg:text-4xl text-2xl mb-3">{image.title}</h1>
-                                                  <Button href='#service'>
+                                                  </p> */}
+                                                  <h1 className="lg:text-4xl text-2xl mb-3 md:mt-20">{image.title}</h1>
+                                                  <Button variant='primary' href='#discover'>
                                                        Discover
                                                   </Button>
                                                   {/* <button onClick={() => console.log('button clicked')} className='bg-gray-900 lg:py-3 py-2 lg:px-5 px-2 sm:text-base  rounded-lg'>

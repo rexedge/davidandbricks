@@ -18,51 +18,39 @@ import { LocationOn, Timer } from '@mui/icons-material'
 const destinations = [
      {
           id: '1',
-          image: '/images/img1.webp',
-          location: 'This is location 1',
+          image: '/images/places/male.jpg',
+          location: 'MALE ISLAND, MALDIVES',
           duration: '1 day',
      },
      {
           id: '2',
-          image: '/images/img2.webp',
-          location: 'This is location 2',
+          image: '/images/places/mahe.jpg',
+          location: 'MAHE ISLAND, SEYCHELLES',
           duration: '2 day',
      },
      {
           id: '3',
-          image: '/images/img3.webp',
-          location: 'This is location 3',
+          image: '/images/places/london.jpg',
+          location: 'LONDON, UK',
           duration: '3 day',
      },
      {
           id: '4',
-          image: '/images/img4.webp',
-          location: 'This is location 4',
+          image: '/images/places/mauritius.jpg',
+          location: 'MAURITIUS',
           duration: '4 day',
      },
      {
           id: '5',
-          image: '/images/img5.webp',
-          location: 'This is location 5',
+          image: '/images/places/seychelles.jpg',
+          location: 'BRUSSEL',
           duration: '5 day',
      },
      {
           id: '6',
-          image: '/images/img6.webp',
-          location: 'This is location 6',
+          image: '/images/places/suncity.jpg',
+          location: 'SUNCITY, SA',
           duration: '6 day',
-     },
-     {
-          id: '7',
-          image: '/images/img7.webp',
-          location: 'This is location 7',
-          duration: '7 day',
-     },
-     {
-          id: '8',
-          image: '/images/img8.webp',
-          location: 'This is location 8',
-          duration: '8 day',
      },
 ];
 
@@ -111,13 +99,12 @@ export default function Destinations() {
                                                        <Image className="absolute h-full w-full object-cover"
                                                             src={destination.image}
                                                             alt={destination.location}
-                                                            layout="fill"
-                                                            objectFit="cover"
+                                                            height={300}
+                                                            width={300}
                                                        />
                                                   </div>
-                                                  <div className="p-6">
-                                                       <h2 className='text-xl font-bold'>{destination.location}</h2>
-                                                       <p className='font-light text-lg'><Timer /> {destination.duration}</p>
+                                                  <div className="p-2 flex text-center items-center">
+                                                       <LocationOn /> <span className='ml-2 text-xl font-bold'>{destination.location}</span>                                       {/* <p className='font-light text-lg'><Timer /> {destination.duration}</p> */}
                                                   </div>
                                              </div>
                                         </Link>
@@ -125,6 +112,10 @@ export default function Destinations() {
                               ))}
                          </div>
                     </Swiper>
+               </div>
+
+               <div className="container px-5 mt-10">
+                    <Image src={'/images/map.png'} className={'w-full'} alt={'map'} height={600} width={1200} />
                </div>
           </Section>
      )

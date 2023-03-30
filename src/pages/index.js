@@ -7,6 +7,7 @@ import Destinations from '@/components/Destinations';
 import Services from '@/components/Services';
 import Gallery from '@/components/Gallery';
 import Footer from '@/components/Footer';
+import Contact from '@/components/Contact';
 
 const inter = Inter({ subsets: ['latin'] })
 const navLinks = [
@@ -43,16 +44,23 @@ export default function Home() {
       <main className={''}>
         <Navbar
           title={'David and Bricks Travels'}
-          logo="/favicon.ico"
           navLinks={navLinks}
           // callToAction={navButtons}
           variant="light"
         />
         <Carousel />
+
+
+        <div className="w-full md:w-2/3 mx-auto text-2xl font-semibold text-center px-5 mt-12">
+          The world is a big place and to ensure you always have the
+          trusted David & Brics Travels hospitality wherever you go, we
+          have spread a great network of professional outfits to help you enjoy the best destinations across the world.
+        </div>
         <Why />
         <Destinations />
         <Services />
         <Gallery />
+        <Contact />
         <Footer />
       </main>
     </>

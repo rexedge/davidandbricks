@@ -1,4 +1,4 @@
-import { Email, Facebook, LinkedIn, LocationOn, Phone, Pinterest, Twitter, YouTube } from '@mui/icons-material'
+import { Email, Facebook, Instagram, LinkedIn, LocationOn, Phone, Pinterest, Twitter, YouTube } from '@mui/icons-material'
 import classNames from 'classnames'
 import Image from 'next/image'
 import Link from 'next/link'
@@ -7,18 +7,22 @@ import Classes from '../styles/footer.module.css'
 
 export default function Footer() {
      return (
-          <div className={classNames(Classes.footer, 'bg-gray-900')}>
-               <div className="container mx-auto">
-                    <div className="pt-6">
+          <div className={classNames(Classes.footer, 'bg-dark')}>
+               <div className="container mx-auto text-light">
+                    <div className="pt-6 px-5">
                          <div className="grid grid-cols-12">
-                              <div className="col-span-12 lg:col-span-4">
+                              <div className="col-span-12 lg:col-span-4 mb-8">
                                    <div className="flex flex-col justify-center">
-                                        <Image src="/favicon.ico" className="foot-logo" alt="footer logo" height={50} width={50} />
+                                        <Image src="/images/logo.png" className="foot-logo" alt="footer logo" height={70} width={70} />
 
                                         <div className="mt-5">
                                              <p className='mb-3 flex flex-row gap-10'>
                                                   <Phone />
-                                                  <span>+956 542 6584</span>
+                                                  <span>
+                                                       <span className="">+234 808 077 6586</span>
+                                                       <br />
+                                                       <span className="">+234 706 611 9546</span>
+                                                  </span>
                                              </p>
 
                                              <p className='mb-3 flex flex-row gap-10'>
@@ -29,16 +33,16 @@ export default function Footer() {
                                              <p className='mb-3 flex flex-row gap-10'>
                                                   <LocationOn />
                                                   <span>
-                                                       203 Fake Street,
-                                                       <br />Mountain View,
-                                                       <br />San Francisco, California, USA
+                                                       1, Funmilayo Street
+                                                       <br />Off Country-Home Road,
+                                                       <br />Benin City, Edo, Nigeria.
                                                   </span>
                                              </p>
                                         </div>
                                    </div>
                               </div>
 
-                              <div className="col-spam-6 lg:col-span-2">
+                              <div className="col-span-6 lg:col-span-2 mb-8">
                                    <div className="">
                                         <h3 className="text-xl font-bold ">About Us</h3>
                                         <ul className='mt-5'>
@@ -51,7 +55,7 @@ export default function Footer() {
                                    </div>
                               </div>
 
-                              <div className="col-spam-6 lg:col-span-2">
+                              <div className="col-span-6 lg:col-span-2 ">
                                    <div className="">
                                         <h3 className="text-xl font-bold ">Support</h3>
                                         <ul className='mt-5'>
@@ -64,23 +68,31 @@ export default function Footer() {
                                    </div>
                               </div>
 
-                              <div className="col-span-12 lg:col-span-4">
+                              <div className="col-span-12 lg:col-span-4 mb-8">
                                    <div className="">
                                         <h3 className="text-xl font-bold ">Subscribe Newsletter</h3>
                                         <p className='mt-5 '>
                                              By subscribing to our mailing list you will always be updated
                                         </p>
-                                        <form className="w-full flex flex-wrap mt-5">
-                                             <input type="text" className="flex-1 px-2 placeholder:text-gray-800 py-2 font-medium" name="email" placeholder="Enter Your Email" />
+                                        <form className="w-full flex flex-wrap my-5">
+                                             <input type="text" className="rounded-none flex-1 px-2 placeholder:text-primary py-2 font-medium" name="email" placeholder="Enter Your Email" />
 
-                                             <button className="flex-2 bg-gray-800 text-primary-color font-semibold" type="submit">Subscribe</button>
+                                             <button className="flex-2 text-light bg-primary font-semibold px-3" type="submit">Subscribe</button>
                                         </form>
+                                        <div className="">
+                                             <span className="">
+                                                  <Link href="#"><Twitter />{` @davidbricstrav1`}</Link>
+                                             </span>
+                                             <span className="ml-5">
+                                                  <Link href="#"><Instagram />{` @davidbricstravels`}</Link>
+                                             </span>
+                                        </div>
                                    </div>
                               </div>
                          </div>
                     </div>
 
-                    <div className="border-t mt-4 pt-4  text-center">
+                    <div className="border-t mt-4 pt-4 px-4 text-center">
                          <p className="mb-5">
                               Copyright @ 2023 <Link href="#" className='font-bold'>ISCE</Link> all right reserved.
                          </p>
