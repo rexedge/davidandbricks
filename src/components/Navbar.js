@@ -9,7 +9,7 @@ import Image from 'next/image'
 
 export default function Navbar({
      title = 'Title',
-     logo = '/images/logo.png',
+     logo = '/images/logo.svg',
      navLinks =
      [
           { title: "Home", url: "/" },

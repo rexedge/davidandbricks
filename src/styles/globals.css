@@ -9,3 +9,17 @@
 * {
      transition: all 0.5 ease-in-out;
 }
+
+@font-face {
+     font-family: 'tahoma';
+     src: url('/fonts/tregular.ttf') format('truetype');
+     font-weight: normal;
+     font-style: normal;
+}
+
+@font-face {
+     font-family: 'tahoma';
+     src: url('/fonts/tbold.ttf') format('truetype');
+     font-weight: bold;
+     font-style: normal;
+}

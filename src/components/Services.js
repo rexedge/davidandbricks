@@ -13,37 +13,20 @@ export default function Services() {
                          title='Services'
                          description='What We Offer For You'
                     />
+                    <div className='mx-auto mb-10 text-[20px] font-light text-dark' style={{
+                         maxWidth: '700px',
+                    }}>
+                         At David & Brics, we offer a wide range of travel services to cater to the unique needs and preferences of our clients and are committed to providing exceptional travel experiences and delivering high-quality services that exceed our clients&apos; expectations. A synopsis of the services we offer includes:
+                    </div>
 
                     <Grid>
                          <Card bg='light'>
                               <div className="flex flex-col md:flex-row gap-5 text-dark p-2 md:p-5">
                                    <AirplanemodeActiveTwoTone sx={{ fontSize: 60 }} />
                                    <div className="">
-                                        <h4 className='font-bold text-xl mb-3'>FLIGHT RESERVATIONS</h4>
+                                        <h4 className='font-bold text-xl mb-3 uppercase'>Personalized travel planning</h4>
                                         <p>
-                                             We are here to assist in hassle-free domestic and international flight bookings
-                                             for business and leisure trips.
-                                        </p>
-                                        <p>
-                                             Using the global distribution system and world
-                                             reservations system, we partner with various airline companies to ensure the
-                                             best deals on local and international flight tickets.
-                                        </p>
-                                   </div>
-                              </div>
-                         </Card>
-                         <Card bg='light'>
-                              <div className="flex flex-col md:flex-row gap-5 text-dark  p-3 md:p-5">
-                                   <AirplaneTicket sx={{ fontSize: 60 }} />
-                                   <div className="">
-                                        <h4 className='font-bold text-xl mb-3'>VISA ASSISTANCE SERVICES</h4>
-                                        <p>
-                                             Driven by our desire to make traveling a fruitful and enjoyable experience and to
-                                             address the needs of the inbound business industry and growing business
-                                             community, we created a visa assistance service to cater for visa and
-                                             immigration processing services for tourist and student permits to the following
-                                             countries: United Kingdom, United States of America, Ireland, Kenya, United
-                                             Arab Emirates, South Africa, Canada and Schengen nations.
+                                             We work closely with our clients to understand their travel preferences, budget, and requirements, and create customized travel itineraries that meet their unique needs.
                                         </p>
                                    </div>
                               </div>
@@ -52,11 +35,9 @@ export default function Services() {
                               <div className="flex flex-col md:flex-row gap-5 text-dark  p-3 md:p-5">
                                    <Hotel sx={{ fontSize: 60 }} />
                                    <div className="">
-                                        <h4 className='font-bold text-xl mb-3'>HOTEL & RESORT RESERVATIONS</h4>
+                                        <h4 className='font-bold text-xl mb-3 uppercase'>Visa assistance services</h4>
                                         <p>
-                                             We are available to handle your accommodation needs and requirements. We
-                                             maximize our partnership with reputable hotels around the globe to guarantee
-                                             that you will get value-for-money and world-class accommodations for your trip.
+                                             We offer a professional assistance on application, documentation, and processing for various visa categories a wide range of immigration processing services to numerous destinations.
                                         </p>
                                    </div>
                               </div>
@@ -65,13 +46,9 @@ export default function Services() {
                               <div className="flex flex-col md:flex-row gap-5 text-dark  p-3 md:p-5">
                                    <FreeBreakfast sx={{ fontSize: 60 }} />
                                    <div className="">
-                                        <h4 className='font-bold text-xl mb-3'>LEISURE ACTIVITIES</h4>
+                                        <h4 className='font-bold text-xl mb-3 uppercase'>Flights and accommodation</h4>
                                         <p>
-                                             Whether by land, by air, or by sea, we have tour packages waiting for you.
-
-                                             Experience a relaxing and unforgettable vacation at some of the best
-
-                                             destinations and locations in the world.
+                                             We offer a comprehensive range of flights and accommodation options, from budget-friendly to luxury, to ensure that our clients have a comfortable and enjoyable travel experience.
                                         </p>
                                    </div>
                               </div>
@@ -80,49 +57,58 @@ export default function Services() {
                               <div className="flex flex-col md:flex-row gap-5 text-dark  p-3 md:p-5">
                                    <CurrencyExchange sx={{ fontSize: 60 }} />
                                    <div className="">
-                                        <h4 className='font-bold text-xl mb-3'>TRAVEL INSURANCE PREMIUMS</h4>
+                                        <h4 className='font-bold text-xl mb-3 uppercase'>Tours and activities</h4>
                                         <p>
-                                             Have a worry-free trip by availing travel insurance for you and your loved ones.
-                                             David & Brics has partnered with reputable insurance providers to make sure
-                                             our clients are insured and protected from unforeseen circumstances.
+                                             We provide a variety of tours and activities that cater to different interests and preferences, from cultural tours and adventure activities to food and wine experiences.
                                         </p>
                                    </div>
                               </div>
                          </Card>
                          <Card bg='light'>
                               <div className="flex flex-col md:flex-row gap-5 text-dark  p-3 md:p-5">
-                                   <Add sx={{ fontSize: 60 }} />
+                                   <AirplanemodeActiveTwoTone sx={{ fontSize: 60 }} />
                                    <div className="">
-                                        <h4 className='font-bold text-xl mb-3'>OTHER SEVICES</h4>
-                                        <ul className='list-disc pl-4'>
-                                             <li>Group tour bookings</li>
-                                             <li>Airport transportation</li>
-                                             <li>Covid19 test bookings</li>
-                                             <li>Travel advisory services</li>
-                                        </ul>
+                                        <h4 className='font-bold text-xl mb-3 uppercase'>Transportation</h4>
+                                        <p>
+                                             We arrange for convenient and reliable transportation options, such as private transfers, car rentals, and train tickets, to ensure that our clients can travel comfortably and hassle-free.
+                                        </p>
+                                   </div>
+                              </div>
+                         </Card>
+                         <Card bg='light'>
+                              <div className="flex flex-col md:flex-row gap-5 text-dark  p-3 md:p-5">
+                                   <AirplaneTicket sx={{ fontSize: 60 }} />
+                                   <div className="">
+                                        <h4 className='font-bold text-xl mb-3 uppercase'>Travel insurance</h4>
+                                        <p>
+                                             We offer travel insurance options to provide our clients with peace of mind and protection in case of unforeseen events during their travel.
+                                        </p>
+                                   </div>
+                              </div>
+                         </Card>
+                         <Card bg='light'>
+                              <div className="flex flex-col md:flex-row gap-5 text-dark  p-3 md:p-5">
+                                   <Hotel sx={{ fontSize: 60 }} />
+                                   <div className="">
+                                        <h4 className='font-bold text-xl mb-3 uppercase'>Corporate travel services</h4>
+                                        <p>
+                                             We provide specialized travel solutions for businesses and organizations, including group travel, meetings and events, and incentive travel programs.
+                                        </p>
+                                   </div>
+                              </div>
+                         </Card>
+                         <Card bg='light'>
+                              <div className="flex flex-col md:flex-row gap-5 text-dark  p-3 md:p-5">
+                                   <FreeBreakfast sx={{ fontSize: 60 }} />
+                                   <div className="">
+                                        <h4 className='font-bold text-xl mb-3 uppercase'>General travel advisory</h4>
+                                        <p>
+                                             We offer counselling and guidance to travelers regarding various aspects of travel, such as visa requirements, health and safety issues, cultural norms and practices, and transportation options.
+                                        </p>
                                    </div>
                               </div>
                          </Card>
                     </Grid>
-                    <Card bg='light mt-5'>
-                         <div className="flex flex-col md:flex-row gap-5 text-dark  p-3 md:p-5">
-                              <Extension sx={{ fontSize: 60 }} />
-                              <div className="">
-                                   <h4 className='font-bold text-xl mb-3'>OUR VALUED ADDED SERVICES</h4>
-                                   <ul className='list-disc pl-4'>
-                                        <li>Detailed knowledge of African, Arabian, Asian and Western cultures</li>
-                                        <li>Extensive track record of delivering travel and service excellence to the
-                                             most discerning global travelers</li>
-                                        <li>Exceptional worldwide reputation based on client satisfaction, trust, and hospitality.</li>
-                                        <li>Competitive prices combined with the highest quality services resulting invalue for money across all our services and products.</li>
-                                        <li>Diversity and expertise in tourism quotations, reservations, operations and accounting.</li>
-                                        <li>Experience in public relations and a renowned reputation in the tourism market.</li>
-                                        <li>Operating with the latest state of the art information and communication technology.</li>
-                                        <li>Problem solving and focus on solution-oriented methods for all customer requests and requirements</li>
-                                   </ul>
-                              </div>
-                         </div>
-                    </Card>
                </div>
           </Section>
      )

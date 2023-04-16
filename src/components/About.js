@@ -1,6 +1,5 @@
 import { ArrowCircleRight, ArrowRight } from '@mui/icons-material'
 import Image from 'next/image'
-import Link from 'next/link'
 import React from 'react'
 import Section from './layout/Section'
 import SectionHeader from './SectionHeader'
@@ -50,7 +49,7 @@ export default function About() {
                                                   width={300}
                                              />
                                              <h4 className='bg-primary text-light text-center uppercase py-2 px-5'>{person.title}</h4>
-                                             <h4 className='bg-light text-dark text-sm uppercase py-2 px-5 text-justify'>{person.description}</h4>
+                                             <h4 className='bg-light text-dark text-sm py-2 px-5 text-justify'>{person.description}</h4>
                                         </div>
                                    </div>
                               ))

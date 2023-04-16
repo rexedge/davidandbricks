@@ -1,0 +1,16 @@
+.quoteContainer {
+     position: relative;
+     padding: 1rem;
+     background-color: rgba(0, 0, 0, 0.1);
+     border-left: 8px solid #cfc;
+}
+
+.quoteContainer:before {
+     content: "";
+     position: absolute;
+     top: 0;
+     left: -8px;
+     border-top: 20px solid transparent;
+     border-right: 20px solid #cfc;
+     border-bottom: 20px solid transparent;
+}

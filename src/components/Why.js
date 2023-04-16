@@ -15,56 +15,6 @@ export default function Why() {
                          bgtitle='WHO?'
                     />
                     <div className="flex flex-wrap">
-                         {/* <div className="w-full lg:w-1/2 grid grid-cols-1 md:grid-cols-2 gap-4">
-                              <div className="">
-                                   <div className="p-3">
-                                        <div className="single_choose mrb40">
-                                             <LocalActivity
-                                                  sx={{ fontSize: 60 }}
-                                                  className='mb-2'
-                                             />
-                                             <h3 className='mb-3 text-xl font-bold'>Activities</h3>
-                                             <p className='mb-5'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fuga veniam similique deserunt veritatis placeat itaque</p>
-                                        </div>
-                                   </div>
-                              </div>
-                              <div className="">
-                                   <div className="p-3">
-                                        <div className="single_choose mrb40">
-                                             <Route
-                                                  sx={{ fontSize: 60 }}
-                                                  className='mb-2'
-                                             />
-                                             <h3 className='mb-3 text-xl font-bold'>Travel Arrangements</h3>
-                                             <p className='mb-5'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fuga veniam similique deserunt veritatis placeat itaque</p>
-                                        </div>
-                                   </div>
-                              </div>
-                              <div className="">
-                                   <div className="p-3">
-                                        <div className="single_choose">
-                                             <SettingsAccessibility
-                                                  sx={{ fontSize: 60 }}
-                                                  className='mb-2'
-                                             />
-                                             <h3 className='mb-3 text-xl font-bold'>Private Guide</h3>
-                                             <p className='mb-5'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fuga veniam similique deserunt veritatis placeat itaque</p>
-                                        </div>
-                                   </div>
-                              </div>
-                              <div className="">
-                                   <div className="p-3">
-                                        <div className="single_choose">
-                                             <LocationOn
-                                                  sx={{ fontSize: 60 }}
-                                                  className='mb-2'
-                                             />
-                                             <h3 className='mb-3 text-xl font-bold'>Location Manager</h3>
-                                             <p className='mb-5'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fuga veniam similique deserunt veritatis placeat itaque</p>
-                                        </div>
-                                   </div>
-                              </div>
-                         </div> */}
                          <div className="w-full lg:w-1/2 mb-5">
                               <Image
                                    src={'/images/who.png'}
@@ -76,41 +26,62 @@ export default function Why() {
                          </div>
                          <div className="w-full lg:w-1/2 mb-5 text-dark text-lg md:px-10 text-justify">
                               <p className="pb-6">
-                                   <span className="text-5xl font-bold">W</span>e are a bespoke travel management company on a fierce mission to satisfy
-                                   the daily retail and corporate travel demands.
+                                   <span className="text-5xl font-bold">W</span>e are a leading travel agency
+                                   committed to creating exceptional travel experiences for our clients.
+                                   With years of experience and expertise in the travel industry, we provide
+                                   personalized and customized travel solutions that cater to the unique needs
+                                   and preferences of our clients.
                               </p>
                               <p className="pb-6">
-                                   Our team is fully serviced to
-                                   provide business and leisure customers who require professional, friendly and
-                                   efficient organization for their inbound and outbound travel and tourism
-                                   needs.
+                                   Our team of travel experts is dedicated to delivering high-quality services,
+                                   building strong relationships with our clients, and ensuring that every
+                                   travel experience is unforgettable.
                               </p>
                               <p className="pb-6">
-                                   We also assist tour operators, tourism boards, travel houses, resorts
-                                   and service providers in destinations around the world to build relationships across various destinations.
-                              </p>
-                              <p className="pb-6">
-                                   Our team is committed to the affairs of existing
-                                   and prospective customers which has been the hallmark of our success.
+                                   At David & Brics Travels, we are passionate about responsible and sustainable
+                                   travel practices and strive to make a positive impact on the world through
+                                   our services. We are your trusted and preferred travel partner, offering
+                                   innovative and sustainable travel solutions that exceed expectations.
                               </p>
                          </div>
                     </div>
-                    <div className="w-full text-2xl font-semibold text-justify mt-10">
-                         <div className="text-center">
-                              OUR MISSION AND VISION
+                    <div className="flex flex-wrap text-dark">
+                         <div className="w-full lg:w-1/2 mb-5">
+                              <div className="w-full text-2xl font-semibold text-justify mt-10 md:pr-10">
+                                   <div className="text-base mt-4">
+                                        <h3 className='text-xl'>MISSION STATEMENT</h3>
+                                        <p className="font-light mb-3">
+                                             Our mission at David & Brics Travels Limited is to provide exceptional travel
+                                             experiences for our clients by offering personalized and customized travel
+                                             solutions that meet their unique needs and preferences.
+                                        </p>
+                                        <p className="font-light mb-3">
+                                             We strive to deliver high-quality services, build strong relationships with our clients, and create
+                                             memorable and enjoyable travel experiences that exceed expectations
+                                        </p>
+                                   </div>
+                              </div>
                          </div>
-                         <div className="text-base mt-4">
-                              <p className="font-light">
-                                   Our mission is to ensure customer satisfaction by providing affordable and reasonable travel packages, continuously improving our services and offers.
-                                   Our objective is to provide ease in planning travel for both domestic and international sectors. We have customized travel plans as per your
-                                   timings and airline preferences in line with your financial budget.
-                              </p>
-                              <p className="font-light">
-                                   It is our priority to offer an unmatched professionals expertise and sophistication
-                                   with a uniquely cultivated business and operations management philosophy
-                                   characterized by firm commitment to excellence, creativity, financial stability,
-                                   quality control and ultimate flexibility in meeting our clients needs.
-                              </p>
+                         <div className="w-full lg:w-1/2 mb-5">
+                              <div className="w-full text-2xl font-semibold text-justify mt-10 md:pr-10">
+                                   <div className="text-base mt-4">
+                                        <h3 className='text-xl mt-3'>VISION STATEMENT</h3>
+                                        <p className="font-light mb-3">
+                                             Our vision at David & Brics Travels Limited is to be recognized as a leading
+                                             travel agency that offers innovative and sustainable travel solutions that
+                                             benefit both our clients and the environment.
+                                        </p>
+                                        <p className="font-light mb-3">
+                                             We aim to continuously improve
+                                             our services, expand our reach, and become a trusted and preferred travel partner
+                                             for individuals and organizations seeking unforgettable travel experiences.
+                                        </p>
+                                        <p className="font-light">
+                                             We aspire to make a positive impact in the world through responsible and ethical
+                                             travel practices and inspire others to do the same.
+                                        </p>
+                                   </div>
+                              </div>
                          </div>
                     </div>
                </div>
