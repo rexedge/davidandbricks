@@ -1,9 +1,7 @@
-import { LocalActivity, LocationOn, Route, SettingsAccessibility, SlowMotionVideo } from '@mui/icons-material'
 import Image from 'next/image'
 import React from 'react'
 import Section from './layout/Section'
 import SectionHeader from './SectionHeader'
-import VideoPlayer from './ui/VideoPlayer'
 
 export default function Why() {
      return (
@@ -17,7 +15,7 @@ export default function Why() {
                     <div className="flex flex-wrap">
                          <div className="w-full lg:w-1/2 mb-5">
                               <Image
-                                   src={'/images/who.png'}
+                                   src={'/images/who.jpg'}
                                    alt="Choose Image"
                                    height={400}
                                    width={700}

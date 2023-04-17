@@ -12,7 +12,7 @@ export default function Contact() {
                     <SectionHeader
                          bgtitle='Contact'
                          title='Contact Us'
-                         description="If You Have any Question, Drop a Message"
+                         description="Send a message if you have any questions"
                     />
 
                     <div className="max-w-7xl mx-auto">
@@ -25,7 +25,7 @@ export default function Contact() {
                                         <LocationOn sx={{ fontSize: 40 }} />
                                         <div className=''>
                                              <div className='font-bold'>
-                                                  Head Office
+                                                  Head Office Address
                                              </div>
                                              <div className=''>
                                                   1, Funmilayo Street
@@ -48,10 +48,10 @@ export default function Contact() {
                                         <Mail sx={{ fontSize: 40 }} />
                                         <div className=''>
                                              <div className='font-bold'>
-                                                  Head Office
+                                                  Email Address
                                              </div>
                                              <div className=''>
-                                                  davidbricstravels@gmail.com
+                                                  admin@davidandbricstravels.com
                                              </div>
                                         </div>
                                    </div>

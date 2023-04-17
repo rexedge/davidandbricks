@@ -108,6 +108,17 @@ export default function Services() {
                                    </div>
                               </div>
                          </Card>
+                         <Card bg='light'>
+                              <div className="flex flex-col md:flex-row gap-5 text-dark  p-3 md:p-5">
+                                   <Hotel sx={{ fontSize: 60 }} />
+                                   <div className="">
+                                        <h4 className='font-bold text-xl mb-3 uppercase'>STUDY PERMITS PROCESSING</h4>
+                                        <p>
+                                             Our services include assistance with university selection, application guidance, visa application, and pre-departure preparations. We also provide information on scholarships and financial aid opportunities, as well as tips on adapting to the cultural and academic environment of the chosen destination.
+                                        </p>
+                                   </div>
+                              </div>
+                         </Card>
                     </Grid>
                </div>
           </Section>
