@@ -21,7 +21,6 @@ export default function Contact() {
           //      method: 'POST',
           //      headers: {
           //           'Content-Type': 'application/json',
-          //           Authorization: 'Bearer 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', // replace with your API key
           //      },
           //      body: JSON.stringify({
           //           personalizations: [

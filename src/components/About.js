@@ -13,7 +13,7 @@ const ABOUT_US = [
      {
           idx: 1,
           image: '/images/numa.png',
-          title: 'OGHENERUKEVBE DANIEL NUMA (B.Sc, ACA, ACIT) ',
+          title: 'OGHENERUKEVBE DANIEL NUMA - DIRECTOR (B.SC, ACA, ACIT)',
           description: "In addition to his current role as Head of Strategy at David & Brics Travels Limited, Oghenerukevbe was one of the founding partners of the company. Presently, he works as a relationship manager at Gtbank Plc, where he is responsible for supervising the Advantium banking customers within his business segment. Prior to his engagement in the retail business unit, he had worked in the Transaction Services Division overseeing branch operations and administration. He holds a Bachelor of Science degree in Accounting from Igbinedion University Okada. He is an Associate Member of the Institute of Chartered Accountants of Nigeria (ICAN) and the  Chartered Institute of Taxation respectively. Oghenerukevbe has been a member of the Board of Directors of the company ever since it was founded, and he contributes in a variety of capacities to the company's efforts to achieve its planned business objectives."
      },
      {
