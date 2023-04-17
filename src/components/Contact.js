@@ -1,9 +1,69 @@
 import { LocationOn, Mail, Phone, Send } from '@mui/icons-material'
-import React from 'react'
+import React, { useState } from 'react'
 import Section from './layout/Section'
 import SectionHeader from './SectionHeader'
 
 export default function Contact() {
+
+     const [formData, setFormData] = useState({
+          name: '',
+          email: '',
+          subject: '',
+          message: '',
+     });
+
+     const handleSubmit = (event) => {
+          event.preventDefault(); // prevent the form from submitting
+
+          // send email using SendGrid API
+          fetch('https://api.sendgrid.com/v3/mail/send', {
+               method: 'POST',
+               headers: {
+                    'Content-Type': 'application/json',
+                    Authorization: 'Bearer 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', // replace with your API key
+               },
+               body: JSON.stringify({
+                    personalizations: [
+                         {
+                              to: [
+                                   {
+                                        email: 'ap.oyeniran@gmail.com', // replace with recipient email
+                                   },
+                              ],
+                              subject: formData.subject,
+                         },
+                    ],
+                    from: {
+                         email: formData.email,
+                         name: formData.name,
+                    },
+                    content: [
+                         {
+                              type: 'text/plain',
+                              value: formData.message,
+                         },
+                    ],
+               }),
+          })
+               .then((response) => response.json())
+               .then((data) => {
+                    console.log(data);
+                    alert('Email sent successfully!');
+               })
+               .catch((error) => {
+                    console.error(error);
+                    alert('An error occurred while sending the email.');
+               });
+     };
+
+
+     const handleChange = (event) => {
+          setFormData({
+               ...formData,
+               [event.target.name]: event.target.value,
+          });
+     };
+
      return (
           <Section>
 
@@ -60,7 +120,7 @@ export default function Contact() {
                                    <div className='border-b-light text-2xl font-bold'>
                                         Contact Us
                                    </div>
-                                   <form className=''>
+                                   <form onSubmit={handleSubmit}>
                                         <div className=''>
                                              <div className='mt-5 grid grid-cols-2 gap-5'>
                                                   <div className='col-span-2 md:col-span-1'>
@@ -73,9 +133,11 @@ export default function Contact() {
                                                        <div className='mt-2'>
                                                             <input
                                                                  type='text'
-                                                                 name=''
+                                                                 name='name'
                                                                  placeholder='Name'
                                                                  className='text-black w-full bg-light border-spacing-1 rounded-lg p-2'
+                                                                 value={formData.name}
+                                                                 onChange={handleChange}
                                                             />
                                                        </div>
                                                   </div>
@@ -95,6 +157,8 @@ export default function Contact() {
                                                                  placeholder='Enter Email'
                                                                  autoComplete='email'
                                                                  className='text-black w-full bg-light border-spacing-1 rounded-lg p-2'
+                                                                 value={formData.email}
+                                                                 onChange={handleChange}
                                                             />
                                                        </div>
                                                   </div>
@@ -114,6 +178,8 @@ export default function Contact() {
                                                             placeholder='Enter subject'
                                                             autoComplete='subject'
                                                             className='text-black w-full bg-light border-spacing-1 rounded-lg p-2'
+                                                            value={formData.subject}
+                                                            onChange={handleChange}
                                                        />
                                                   </div>
                                              </div>
@@ -131,7 +197,8 @@ export default function Contact() {
                                                             rows={3}
                                                             className='text-black w-full bg-light border-spacing-1 rounded-lg p-2'
                                                             placeholder='Write a few sentences.'
-                                                            defaultValue={''}
+                                                            value={formData.message}
+                                                            onChange={handleChange}
                                                        />
                                                   </div>
                                              </div>

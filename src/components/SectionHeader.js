@@ -4,7 +4,7 @@ import Classes from '../styles/section-header.module.css'
 export default function SectionHeader(
      {
           title = '',
-          description = 'Destination',
+          description = '',
           bgtitle = ''
      }
 ) {

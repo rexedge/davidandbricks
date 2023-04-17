@@ -32,9 +32,8 @@ export default function About() {
                <div className="container" id="about" >
 
                     <SectionHeader
-                         bgtitle='Gallery'
-                         title='Tour Gallery'
-                         description="Best Tourist' s Shared Photos"
+                         bgtitle='About US'
+                         description='Meet Our Team'
                     />
 
                     <div className='w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4' >
