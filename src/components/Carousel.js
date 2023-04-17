@@ -81,7 +81,7 @@ export default function Carousel() {
                                         // priority
                                         />
                                         <div
-                                             className="absolute left-0 right-0 top-0 bottom-0 bg-light bg-opacity-30 mx-auto flex items-center justify-center text-center text-white px-5">
+                                             className="absolute left-0 right-0 top-0 bottom-0 bg-dark bg-opacity-10 mx-auto flex items-center justify-center text-center text-white px-5">
                                              <div className="">
                                                   <Image src={'/images/logofull.png'} alt='David and Brics Logo' height={300} width={900} />
                                                   {/* <p className='lg:text-[150%] text-base'>

@@ -7,7 +7,7 @@ export default function Contact() {
      return (
           <Section>
 
-               <div className="container bg-dark text-light pt-10 rounded-lg" id="contact" >
+               <div className="container bg-dark text-white pt-10 rounded-lg" id="contact" >
 
                     <SectionHeader
                          bgtitle='Contact'
@@ -75,7 +75,7 @@ export default function Contact() {
                                                                  type='text'
                                                                  name=''
                                                                  placeholder='Name'
-                                                                 className='w-full bg-light border-spacing-1 rounded-lg p-2'
+                                                                 className='text-black w-full bg-light border-spacing-1 rounded-lg p-2'
                                                             />
                                                        </div>
                                                   </div>
@@ -94,7 +94,7 @@ export default function Contact() {
                                                                  type='email'
                                                                  placeholder='Enter Email'
                                                                  autoComplete='email'
-                                                                 className='w-full bg-light border-spacing-1 rounded-lg p-2'
+                                                                 className='text-black w-full bg-light border-spacing-1 rounded-lg p-2'
                                                             />
                                                        </div>
                                                   </div>
@@ -113,7 +113,7 @@ export default function Contact() {
                                                             type='subject'
                                                             placeholder='Enter subject'
                                                             autoComplete='subject'
-                                                            className='w-full bg-light border-spacing-1 rounded-lg p-2'
+                                                            className='text-black w-full bg-light border-spacing-1 rounded-lg p-2'
                                                        />
                                                   </div>
                                              </div>
@@ -129,7 +129,7 @@ export default function Contact() {
                                                             id='message'
                                                             name='message'
                                                             rows={3}
-                                                            className='w-full bg-light border-spacing-1 rounded-lg p-2'
+                                                            className='text-black w-full bg-light border-spacing-1 rounded-lg p-2'
                                                             placeholder='Write a few sentences.'
                                                             defaultValue={''}
                                                        />

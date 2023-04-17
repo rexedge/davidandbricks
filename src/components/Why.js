@@ -22,7 +22,7 @@ export default function Why() {
                                    className="rounded-md w-full"
                               />
                          </div>
-                         <div className="w-full lg:w-1/2 mb-5 text-dark text-lg md:px-10 text-justify">
+                         <div className="w-full lg:w-1/2 mb-5 text-lg md:px-10 text-justify">
                               <p className="pb-6">
                                    <span className="text-5xl font-bold">W</span>e are a leading travel agency
                                    committed to creating exceptional travel experiences for our clients.
@@ -43,7 +43,7 @@ export default function Why() {
                               </p>
                          </div>
                     </div>
-                    <div className="flex flex-wrap text-dark">
+                    <div className="flex flex-wrap ">
                          <div className="w-full lg:w-1/2 mb-5">
                               <div className="w-full text-2xl font-semibold text-justify mt-10 md:pr-10">
                                    <div className="text-base mt-4">
@@ -74,10 +74,10 @@ export default function Why() {
                                              our services, expand our reach, and become a trusted and preferred travel partner
                                              for individuals and organizations seeking unforgettable travel experiences.
                                         </p>
-                                        <p className="font-light">
+                                        {/* <p className="font-light">
                                              We aspire to make a positive impact in the world through responsible and ethical
                                              travel practices and inspire others to do the same.
-                                        </p>
+                                        </p> */}
                                    </div>
                               </div>
                          </div>

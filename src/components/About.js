@@ -41,15 +41,17 @@ export default function About() {
                          {
                               ABOUT_US.map((person, idx) => (
                                    <div key={idx} className='col-span-1' p='0'>
-                                        <div className='relative w-full overflow-hidden hover:scale-[102%] transition duration-200'>
+                                        <div className='relative max-w-[300px] rounded-lg mb-5 mx-auto max-h-[300px] overflow-hidden hover:scale-[102%] transition duration-200'>
                                              <Image className="h-full w-full object-cover"
                                                   src={person.image}
                                                   alt={person.title}
                                                   height={400}
                                                   width={300}
                                              />
+                                        </div>
+                                        <div className="max-w-[300px] mx-auto">
                                              <h4 className='bg-primary text-center uppercase py-2 px-5'>{person.title}</h4>
-                                             <h4 className='bg-light text-dark text-sm py-2 px-5 text-justify'>{person.description}</h4>
+                                             <h4 className='bg-light   text-sm py-5 px-5 text-justify'>{person.description}</h4>
                                         </div>
                                    </div>
                               ))

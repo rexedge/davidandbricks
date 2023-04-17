@@ -20,7 +20,7 @@ export default function Navbar({
      const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
 
      return (
-          <header className={'fixed top-0 left-0 right-0 drop-shadow z-50 bg-white text-primary'}>
+          <header className={'fixed top-0 left-0 right-0 drop-shadow z-50 bg-white text-[#0c3532]'}>
                <nav className="mx-auto flex max-w-7xl items-center justify-between p-4 lg:px-8" aria-label="Global">
                     {
                          logo &&
@@ -44,7 +44,7 @@ export default function Navbar({
 
                     <div className="hidden lg:flex lg:gap-x-12">
                          {navLinks && navLinks.map((link, index) => (
-                              <Link key={index} href={link.url} className="text-sm font-semibold leading-6 text-primary hover:text-secondary hover:scale-110">
+                              <Link key={index} href={link.url} className="text-sm font-semibold leading-6 text-[#0c3532] hover:text-secondary hover:scale-110">
                                    {link.title}
                               </Link>
                          ))}
@@ -54,7 +54,7 @@ export default function Navbar({
                          <div className="hidden lg:flex lg:flex-1 lg:justify-end">
                               {
                                    callToAction.map((cta, index) => (
-                                        <Link key={index} href={cta.url} className="ml-3 text-sm font-semibold leading-6 text-primary">
+                                        <Link key={index} href={cta.url} className="ml-3 text-sm font-semibold leading-6 text-[#0c3532]">
                                              {cta.title} <span aria-hidden="true">&rarr;</span>
                                         </Link>
                                    ))
@@ -94,7 +94,7 @@ export default function Navbar({
                                              <Link
                                                   key={index}
                                                   href={link.url}
-                                                  className="-mx-3 block rounded-lg py-2 px-3 text-base font-semibold leading-7 text-primary hover:bg-gray-50"
+                                                  className="-mx-3 block rounded-lg py-2 px-3 text-base font-semibold leading-7 text-[#0c3532] hover:bg-gray-50"
                                              >
                                                   {link.title}
                                              </Link>
@@ -108,7 +108,7 @@ export default function Navbar({
                                                        <Link
                                                             key={index}
                                                             href={link.url}
-                                                            className="-mx-3 block rounded-lg py-2 px-3 text-base font-semibold leading-7 text-primary hover:bg-gray-50"
+                                                            className="-mx-3 block rounded-lg py-2 px-3 text-base font-semibold leading-7 text-[#0c3532] hover:bg-gray-50"
                                                        >
                                                             {link.title}
                                                        </Link>

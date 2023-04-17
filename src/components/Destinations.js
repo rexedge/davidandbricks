@@ -61,7 +61,7 @@ export default function Destinations() {
                     <SectionHeader
                          bgtitle='Places'
                          title='Destination'
-                         description='Travel Most Popular Place'
+                         description='Popular Travel Destinations'
                     />
 
                     <Swiper

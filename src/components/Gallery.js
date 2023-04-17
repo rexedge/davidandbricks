@@ -42,13 +42,6 @@ const PLACES_VISITED = [
           place: 'Edinburgh, Scotland',
      },
      {
-          idx: 5,
-          image: '/images/cusco.png',
-          height: 400,
-          width: 500,
-          place: 'Cusco, Peru',
-     },
-     {
           idx: 6,
           image: '/images/doha.png',
           height: 400,
@@ -68,13 +61,6 @@ const PLACES_VISITED = [
           height: 400,
           width: 500,
           place: 'Bergen, Norway',
-     },
-     {
-          idx: 9,
-          image: '/images/beijing.png',
-          height: 400,
-          width: 500,
-          place: 'Beijing, China',
      },
      {
           idx: 10,
@@ -115,7 +101,7 @@ export default function Gallery() {
                     <SectionHeader
                          bgtitle='Gallery'
                          title='Tour Gallery'
-                         description="Best Tourist' s Shared Photos"
+                         description="Travel Destinations"
                     />
 
                     <div className='w-full grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-4' >
@@ -129,8 +115,8 @@ export default function Gallery() {
                                                   height={300}
                                                   width={400}
                                              />
-                                             <Link href={place.image} className="absolute right-3 top-3 hover:scale-150 transition duration-300 text-light"><ArrowCircleRight sx={{ fontSize: 40 }} /></Link>
-                                             <h4 className='absolute bottom-0 left-0 right-0 bg-primary text-light text-center uppercase p-2'>{place.place}</h4>
+                                             <Link href={place.image} className="absolute right-3 top-3 hover:scale-150 transition duration-300 text-black"><ArrowCircleRight sx={{ fontSize: 40 }} /></Link>
+                                             <h4 className='absolute bottom-0 left-0 right-0 bg-primary text-center uppercase p-2'>{place.place}</h4>
                                         </div>
                                    </div>
                               ))
