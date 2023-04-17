@@ -1,4 +1,3 @@
-import { ArrowCircleRight, ArrowRight } from '@mui/icons-material'
 import Image from 'next/image'
 import React from 'react'
 import Section from './layout/Section'
