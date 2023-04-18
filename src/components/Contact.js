@@ -14,46 +14,46 @@ export default function Contact() {
 
      const handleSubmit = (event) => {
           event.preventDefault(); // prevent the form from submitting
-          alert('Email sent successfully!');
 
           // send email using SendGrid API
-          // fetch('https://api.sendgrid.com/v3/mail/send', {
-          //      method: 'POST',
-          //      headers: {
-          //           'Content-Type': 'application/json',
-          //      },
-          //      body: JSON.stringify({
-          //           personalizations: [
-          //                {
-          //                     to: [
-          //                          {
-          //                               email: 'ap.oyeniran@gmail.com', // replace with recipient email
-          //                          },
-          //                     ],
-          //                     subject: formData.subject,
-          //                },
-          //           ],
-          //           from: {
-          //                email: formData.email,
-          //                name: formData.name,
-          //           },
-          //           content: [
-          //                {
-          //                     type: 'text/plain',
-          //                     value: formData.message,
-          //                },
-          //           ],
-          //      }),
-          // })
-          //      .then((response) => response.json())
-          //      .then((data) => {
-          //           console.log(data);
-          //           alert('Email sent successfully!');
-          //      })
-          //      .catch((error) => {
-          //           console.error(error);
-          //           alert('An error occurred while sending the email.');
-          //      });
+          fetch('https://api.sendgrid.com/v3/mail/send', {
+               method: 'POST',
+               headers: {
+                    'Content-Type': 'application/json',
+                    Authorization: `Bearer ${process.env.REACT_APP_SENDGRID_API_KEY}`
+               },
+               body: JSON.stringify({
+                    personalizations: [
+                         {
+                              to: [
+                                   {
+                                        email: 'ap.oyeniran@gmail.com', // replace with recipient email
+                                   },
+                              ],
+                              subject: formData.subject,
+                         },
+                    ],
+                    from: {
+                         email: formData.email,
+                         name: formData.name,
+                    },
+                    content: [
+                         {
+                              type: 'text/plain',
+                              value: formData.message,
+                         },
+                    ],
+               }),
+          })
+               .then((response) => response.json())
+               .then((data) => {
+                    console.log(data);
+                    alert('Email sent successfully!');
+               })
+               .catch((error) => {
+                    console.error(error);
+                    alert('An error occurred while sending the email.');
+               });
      };
 
 
