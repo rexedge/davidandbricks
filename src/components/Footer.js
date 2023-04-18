@@ -30,7 +30,7 @@ export default function Footer() {
 
                                              <p className='mb-3 flex flex-row gap-10'>
                                                   <Email />
-                                                  <span>davidbricstravels@gmail.com</span>
+                                                  <span>admin@davidandbricstravels.com</span>
                                              </p>
 
                                              <p className='mb-3 flex flex-row gap-10'>
