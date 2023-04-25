@@ -1,4 +1,4 @@
-<IfModule mod_rewrite.c>
+<!-- <IfModule mod_rewrite.c>
      RewriteEngine On
      RewriteBase /subdirectory
      RewriteRule ^index\.html$ - [L]
@@ -6,4 +6,11 @@
      RewriteCond %{REQUEST_FILENAME} !-d
      RewriteCond %{REQUEST_FILENAME} !-l
      RewriteRule . /index.html [L]
-</IfModule>
+</IfModule> -->
+
+
+RewriteEngine On
+RewriteRule ^\.well-known/acme-challenge/ - [L]
+RewriteCond %{HTTPS} !=on
+RewriteRule ^.*$ https://%{SERVER_NAME}%{REQUEST_URI} [R,L]
+RewriteRule ^(.*)$ http://127.0.0.1:3000/$1 [P,L]
