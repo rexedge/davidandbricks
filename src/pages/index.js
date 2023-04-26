@@ -36,7 +36,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>David And Bricks Travels</title>
+        <title>David And brics Travels</title>
         <meta
           name="description"
           content="The world is a big place and to ensure you always have the trusted David & Brics Travels hospitality wherever you go, we have spread a great network of professional ou its to help you enjoy the best destinations across the world."
