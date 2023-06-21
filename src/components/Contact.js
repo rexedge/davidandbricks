@@ -1,28 +1,32 @@
 import { LocationOn, Mail, Phone, Send } from '@mui/icons-material'
-import React, { useState } from 'react'
+import React, { useRef, useState } from 'react'
 import Section from './layout/Section'
 import SectionHeader from './SectionHeader'
+import emailjs from '@emailjs/browser'
 
 export default function Contact() {
+     const form = useRef();
+     const [isSending, setIsSending] = useState(false)
+     const [showModal, setShowModal] = useState(false)
 
-     const [formData, setFormData] = useState({
-          name: '',
-          email: '',
-          subject: '',
-          message: '',
-     });
+     const sendEmail = (e) => {
+          e.preventDefault();
+          setIsSending(true);
 
-     const handleSubmit = (event) => {
-          event.preventDefault(); // prevent the form from submitting
-
-     };
-
-
-     const handleChange = (event) => {
-          setFormData({
-               ...formData,
-               [event.target.name]: event.target.value,
-          });
+          emailjs.sendForm('davidsandbricsservice001', 'davidsandbricstemplate01', form.current, 'aHt_jTeO824HGeBUB')
+               .then((result) => {
+                    console.log(result.text);
+               }, (error) => {
+                    console.log(error.text);
+               });
+          emailjs.sendForm('davidsandbricsservice001', 'davidsandbricstemplate02', form.current, 'aHt_jTeO824HGeBUB')
+               .then((result) => {
+                    console.log(result.text);
+                    setShowModal(true)
+               }, (error) => {
+                    console.log(error.text);
+               });
+          setIsSending(false)
      };
 
      return (
@@ -81,12 +85,12 @@ export default function Contact() {
                                    <div className='border-b-light text-2xl font-bold'>
                                         Contact Us
                                    </div>
-                                   <form onSubmit={handleSubmit}>
+                                   <form ref={form} onSubmit={sendEmail}>
                                         <div className=''>
                                              <div className='mt-5 grid grid-cols-2 gap-5'>
                                                   <div className='col-span-2 md:col-span-1'>
                                                        <label
-                                                            htmlFor='first-name'
+                                                            htmlFor='user_name'
                                                             className='text-lg uppercase font-semibold'
                                                        >
                                                             Your Name
@@ -94,18 +98,18 @@ export default function Contact() {
                                                        <div className='mt-2'>
                                                             <input
                                                                  type='text'
-                                                                 name='name'
+                                                                 name='user_name'
                                                                  placeholder='Name'
                                                                  className='text-black w-full bg-light border-spacing-1 rounded-lg p-2'
-                                                                 value={formData.name}
-                                                                 onChange={handleChange}
+                                                            // value={formData.name}
+                                                            // onChange={handleChange}
                                                             />
                                                        </div>
                                                   </div>
 
                                                   <div className='col-span-2 md:col-span-1'>
                                                        <label
-                                                            htmlFor='email'
+                                                            htmlFor='user_email'
                                                             className='text-lg uppercase font-semibold'
                                                        >
                                                             Email Address
@@ -113,13 +117,13 @@ export default function Contact() {
                                                        <div className='mt-2'>
                                                             <input
                                                                  id='email'
-                                                                 name='email'
+                                                                 name='user_email'
                                                                  type='email'
                                                                  placeholder='Enter Email'
                                                                  autoComplete='email'
                                                                  className='text-black w-full bg-light border-spacing-1 rounded-lg p-2'
-                                                                 value={formData.email}
-                                                                 onChange={handleChange}
+                                                            // value={formData.email}
+                                                            // onChange={handleChange}
                                                             />
                                                        </div>
                                                   </div>
@@ -139,8 +143,8 @@ export default function Contact() {
                                                             placeholder='Enter subject'
                                                             autoComplete='subject'
                                                             className='text-black w-full bg-light border-spacing-1 rounded-lg p-2'
-                                                            value={formData.subject}
-                                                            onChange={handleChange}
+                                                       // value={formData.subject}
+                                                       // onChange={handleChange}
                                                        />
                                                   </div>
                                              </div>
@@ -158,8 +162,8 @@ export default function Contact() {
                                                             rows={3}
                                                             className='text-black w-full bg-light border-spacing-1 rounded-lg p-2'
                                                             placeholder='Write a few sentences.'
-                                                            value={formData.message}
-                                                            onChange={handleChange}
+                                                       // value={formData.message}
+                                                       // onChange={handleChange}
                                                        />
                                                   </div>
                                              </div>
@@ -168,6 +172,7 @@ export default function Contact() {
                                         <div className='mt-6 flex items-center justify-start gap-x-6'>
                                              <button
                                                   type='submit'
+                                                  disabled={isSending}
                                                   className='rounded-md bg-primary px-10 py-2 uppercase font-semibold text-white shadow-sm hover:bg-secondary focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary-light'
                                              >
                                                   <Send /> Send
@@ -178,6 +183,18 @@ export default function Contact() {
                          </div>
                     </div>
                </div>
+               {
+                    showModal && (
+                         <div className='fixed top-0 left-0 overflow-hidden h-screen w-screen flex justify-center items-center backdrop-blur-md bg-opacity-60 z-[1000]'>
+                              <div className='h-[100px] w-[300px] bg-white flex flex-col justify-center items-center rounded-3xl'>
+                                   <div className="mb-3">
+                                        Mail sent successfully!!!
+                                   </div>
+                                   <button className='text-sm uppercase px-2 py-1 bg-secondary/80 rounded' onClick={() => setShowModal(false)}>Close</button>
+                              </div>
+                         </div>
+                    )
+               }
 
           </Section>
      )

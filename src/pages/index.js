@@ -55,7 +55,7 @@ export default function Home() {
 
 
         <div className="w-full md:w-2/3 mx-auto text-2xl italic text-center px-5 mt-12">
-          <div class={styles.quoteContainer}>
+          <div className={styles.quoteContainer}>
             <p>&quot;The world is a big place and to ensure you always have the trusted David & Brics Travels hospitality wherever you go, we have spread a great network of professional outfits to help you enjoy the best destinations across the world.&quot;</p>
           </div>
         </div>
